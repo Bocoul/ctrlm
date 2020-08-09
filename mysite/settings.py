@@ -25,12 +25,13 @@ SECRET_KEY = 'z(1eh+sotd8cnu0@i1&jr@2m(#l6m542^!vtvypzldd&1-uvmt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'ctrlm.apps.CtrlmConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,7 +81,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
+    # 'ctrlm': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': "/Library/projets/formations/mysite/ctrlm.db",
+    # }
 }
 
 

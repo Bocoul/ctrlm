@@ -18,6 +18,7 @@ from django.conf import settings
 from django.urls import path, include
 
 urlpatterns = [
+    path(r'ctrlm/', include('ctrlm.urls'), name='ctrlm'),
     path(r'polls/', include('polls.urls')),
     path('ndako/', admin.site.urls),
     path('', include('polls.urls')),
