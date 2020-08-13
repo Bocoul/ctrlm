@@ -1,7 +1,7 @@
 
 
 from django.contrib import admin
-from .views import index,prm_search, etab_search, go
+-from .views import index,prm_search, etab_search, go
 
 
 from .models import setup_data
