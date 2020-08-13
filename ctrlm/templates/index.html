@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'ctrlm:go' %}" method="post" enctype="multipart/form-data" id="main_form" >
+     {% csrf_token %}
+<div>
+  <fieldset class="data">
+        <div class="form-row field-rae">
+                <div>
+                    <input type="file"  name="source" value="Select your  file  source" />
+                </div>
+
+        </div>
+
+        <div class="form-row field-voie">
+            <div>
+                <a href="./prmquery">Rechercher les points de livraison</a>
+            </div>
+            <div>
+                <a href="./etabquery">Rechercher les etablissements</a>
+            </div>
+            <div>
+                <a href="./etabquery">Effacer tout</a>
+                <a href="./etabquery">arreter le traitement</a>
+                <a href="./etabquery">relancer le  traitement</a>
+            </div>
+
+        </div>
+
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="go" class="default" name="_save">
+
+
+
+</div>
+
+
+
+    <script type="text/javascript" id="django-admin-form-add-constants" src="/static/admin/js/change_form.js">
+    </script>
+
+
+
+
+<script type="text/javascript" id="django-admin-prepopulated-fields-constants" src="/static/admin/js/prepopulate_init.js" data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form>
+</body>
+</html>
